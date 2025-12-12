@@ -1,13 +1,15 @@
 {
-	"name": "test/php-simple-test",
-	"description": "Simple PHP project with intentional vulnerabilities for security testing",
+	"name": "test/php-security-test",
+	"description": "PHP project with breaking changes after dependency bumps",
 	"type": "project",
 	"require": {
 		"php": ">=7.4",
-		"guzzlehttp/guzzle": "7.4.4",
-		"guzzlehttp/psr7": "2.4.0",
-		"symfony/http-kernel": "5.4.0",
-		"twig/twig": "2.0.0"
+		"guzzlehttp/guzzle": "6.5.8",
+		"nesbot/carbon": "2.66.0",
+		"symfony/http-foundation": "5.4.0",
+		"monolog/monolog": "2.9.0",
+		"psr/log": "^3.0",
+		"symfony/polyfill-mbstring": "^1.28"
 	},
 	"autoload": {
 		"psr-4": {
